@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="trading.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Income statements</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4>sales</h4>
+            <input type="text" value="Sales" class="content"/> <input type="text" />
+            <input type="text" id="sales" value="100000" /><br />
+            <input type="text" value="less return inwards" class="content"/><input
+              type="text"
+            />
+            <input type="text" id="returnsInwards" value="5000" /><br />
+            <input type="text" value="turnover" class="content"/><input type="text" />
+            <input type="text" id="turnover" /><br />
+            <h4>cost of sales</h4>
+            <input type="text" value="opening stock" class="content" />
+            <input type="text" id="opStock" value="2000" /><br />
+            <input type="text" value="Add purchases" class="content"/>
+            <input type="text" id="purchases" value="65000" /><br />
+            <input type="text" value="less return outwards" class="content" />
+            <input type="text" id="returnsOutwards" value="4000" /><br />
+            <input type="text" value=" less drawings" class="content"/>
+            <input type="text" id="purchasesDrawings" value="2000" /><br />
+            <input type="text" value="Add carriage inwards" class="content"/>
+            <input type="text" id="carriageInwards" value="1000" /><br />
+            <input type="text" value="Add freight charges" class="content"/>
+            <input type="text" id="freightCharges" value="1000" /><br />
+            <input type="text" value="Add railage inwards" class="content"/>
+            <input type="text" id="railageInwards" value="3000" /><br />
+            <input type="text" value="less closing stock" class="content"/>
+            <input type="text" id="cloStock" value="15000" /><br />
+            <input type="text" value="cost of sales" class="content"/><input type="text" />
+            <input type="text" id="cogs" value="120000" /><br />
+            <input type="text" value="gross profit" class="content"/><input type="text" />
+            <input type="text" id="grossProfit" /><br />
+            <h4>Other incomes</h4>
+            <input type="text" value="provision for bad debts" class="content"/>
+            <input type="text" id="provisionIncome" /><br />
+            <input type="text" value="rent received " class="content"/>
+            <input type="text" id="rentReceived" value="800" /><br />
+            <input type="text" value="discount received" class="content"/>
+            <input type="text" id="discountReceived" value="200" /><br />
+            <input type="text" value="total incomes" class="content"/><input
+              type="text"
+            /><input type="text" id="totalIncome" />
+            <br />
+            <input type="text" value="gross profit after income" class="content"/><input
+              type="text"
+            /><input type="text" id="grossProfitAfterIncome" />
+            <h4>Expenses</h4>
+            <input type="text" value="provision" class="content"/>
+            <input type="text" id="provisionExpense" /><br />
+            <input type="text" id="depreciation1" value="depreciation1" class="content"/>
+            <input type="text" id="dep1" /><br />
+            <input type="text" id="depreciation2" value="depreciation2" class="content"/>
+            <input type="text" id="dep2" /><br />
+            <input type="text" id="depreciation3" value="depreciation3" class="content"/>
+            <input type="text" id="dep3" /><br />
+
+            <input type="text" id="rem1" value="exp1" class="content"/>
+            <input type="text" id="exp1" /><br />
+
+            <input type="text" id="rem2" value="exp2" class="content"/>
+            <input type="text" id="exp2" /><br />
+
+            <input type="text" id="rem3" value="exp3" class="content"/>
+            <input type="text" id="exp3" /><br />
+
+            <input type="text" id="rem4" value="exp4" class="content"/>
+            <input type="text" id="exp4" /><br />
+
+            <input type="text" value="exp5" class="content"/>
+            <input type="text" id="exp5" /><br />
+            <input type="text" value="exp6" class="content"/>
+            <input type="text" id="exp6" /><br />
+            <input type="text" value="total expenses" class="content"/><input type="text" />
+            <input type="text" id="totalExpenses" /><br />
+            <input type="text" value="Net profit" class="content"/><input type="text" />
+            <input type="text" id="netProfit" /><br /><br /><br />
+            <button class="btn btn-outline-dark" value="calculate">Click</button><br /><br />
+          </div>
+          <div class="col-sm-6">
+            <!-- provistion for bad debts -->
+            <h4>Provision for bad debts</h4>
+            <input type="text" value="%" />
+            <input type="text" value="bad debts" />
+            <input type="text" value="debtors" /><br />
+            <input type="text" id="percentage" placeholder="0.05" />
+            <input type="text" id="badDebts" placeholder="300" />
+            <input type="text" id="debtors" placeholder="9300" /><br />
+            <br />
+            <input type="text" value="opening balance" />
+            <input type="text" value="closing balance" /><br />
+            <input type="text" id="bd" placeholder="300" />
+            <input type="text" id="cd" /><br /><br />
+            <button class="btn btn-outline-dark btn-sm" value="Answer1">Click</button><br /><br />
+            <!-- reducing balance method -->
+            <h4>Reducing balance/Diminishing method</h4>
+            <input type="text" value="Asset1" />
+            <input type="text" value="cost" />
+            <input type="text" value="Acc dep" />
+            <input type="text" value="%" /><br />
+            <input type="text" id="asset1" placeholder="furniture" />
+            <input type="text" id="cost1" placeholder="200000" />
+            <input type="text" id="accDep1" placeholder="20000" />
+            <input type="text" id="depPer1" placeholder="0.1" /><br /><br>
+            <button class="btn btn-outline-dark btn-sm" value="dep1">Click</button><br /><br />
+            <input type="text" value="Asset2" />
+            <input type="text" value="cost" />
+            <input type="text" value="Acc dep" />
+            <input type="text" value="%" /><br />
+            <input type="text" id="asset2" placeholder="van" />
+            <input type="text" id="cost2" placeholder="50000" />
+            <input type="text" id="accDep2" placeholder="10000" />
+            <input type="text" id="depPer2" placeholder="0.15" /><br /><br>
+            <button class="btn btn-outline-dark btn-sm" value="dep2">Click</button><br /><br />
+            <!-- straight line balance method -->
+            <h4>Straight line method</h4>
+            <input type="text" value="Asset3" />
+            <input type="text" value="cost" />
+            <input type="text" value="Acc dep" />
+            <input type="text" value="%" /><br />
+            <input type="text" id="asset3" placeholder="motor" />
+            <input type="text" id="cost3" placeholder="9000" />
+            <input type="text" id="accDep3" placeholder="1000" />
+            <input type="text" id="depPer3" placeholder="0.1" /><br /><br>
+            <button class="btn btn-outline-dark btn-sm" value="dep3">Click</button><br /><br />
+            <h4>Accruals</h4>
+            <input type="text" value="expense" />
+            <input type="text" value="paid amnt" />
+            <input type="text" value="accrued amount" /><br />
+            <!-- acrual 1 -->
+            <input type="text" id="expenses1" value="exp1" />
+            <input type="text" id="ogExp1" placeholder="7300" />
+            <input type="text" id="acc1" placeholder="200" /><br />
+            <!-- accrual 2 -->
+            <input type="text" id="expenses2" value="exp2" />
+            <input type="text" id="ogExp2" placeholder="5500" />
+            <input type="text" id="acc2" placeholder="90" /><br /><br>
+            <button class="btn btn-outline-dark btn-sm" value="Answer2">Click</button><br /><br />
+            <h4>Prepayments</h4>
+            <input type="text" value="expense" />
+            <input type="text" value="paid amnt" />
+            <input type="text" value="prepaid amnt" /><br />
+            <!-- prepaid 1 -->
+            <input type="text" id="expenses3" value="exp3" />
+            <input type="text" id="ogExp3" placeholder="4000" />
+            <input type="text" id="pre1" placeholder="150" /><br />
+            <!-- prepaid 2 -->
+            <input type="text" id="expenses4" value="exp4" />
+            <input type="text" id="ogExp4" placeholder="3000" />
+            <input type="text" id="pre2" placeholder="50" /><br /><br>
+            <button class="btn btn-outline-dark btn-sm" value="Answer3">Click</button><br /><br />
+          </div>
+          <div class="col-sm-6">
+              <h2>Balance sheet</h2>
+              <h4>Fixed assets</h4>
+              <input type="text" value="Fixed Assets">
+              <input type="text" value="Cost">
+              <input type="text" value="Depreciation">
+              <input type="text" value="Net Book Value">
+              <!-- assest 1 -->
+              <input type="text" id="changeAsset1" placeholder="Assets1" >
+              <input type="text" id="balCost1" placeholder="100000">
+              <input type="text" id="balDep1" placeholder="20000">
+              <input type="text" id="nbv1" placeholder="80000">
+              <!-- asset 2  -->
+              <input type="text" id="changeAsset2" placeholder="Assets2">
+              <input type="text" id="balCost2" placeholder="50000">
+              <input type="text" id="balDep2" placeholder="10000">
+              <input type="text" id="nbv2" placeholder="40000">
+              <!-- asset 3  -->
+              <input type="text" id="changeAsset3" placeholder="Assets3">
+              <input type="text" id="balCost3" placeholder="10000">
+              <input type="text" id="balDep3" placeholder="2000">
+              <input type="text" id="nbv3" placeholder="8000">
+              <!-- asset 4  -->
+              <input type="text" value="Assets4">
+              <input type="text" id="balCost4" placeholder="20000">
+              <input type="text" id="balDep4" placeholder="5000">
+              <input type="text" id="nbv4" placeholder="15000">
+              <!-- total fixed assets -->
+              <input type="text">
+              <input type="text">
+              <input type="text">
+              <input type="text" id="totalFixedAssets" placeholder="143000">
+              <h4>Current assests</h4>
+               <!-- assest 1 -->
+               <input type="text" value="Stock">
+               <input type="text">
+               <input type="text" id="stock" placeholder="1800">
+               <input type="text">
+               <!-- asset 2  -->
+               <input type="text" value="Debtors" >
+               <input type="text">
+               <input type="text" id="balDebtors" placeholder="1200">
+               <input type="text">
+               <!-- asset 3  -->
+               <input type="text" value="Prepayments">
+               <input type="text">
+               <input type="text" id="prepayments" placeholder="100">
+               <input type="text">
+               <!-- asset 4  -->
+               <input type="text" value="Bank">
+               <input type="text">
+               <input type="text" id="bank" placeholder="180">
+               <input type="text">
+                <!-- asset 4  -->
+                <input type="text" value="Cash">
+                <input type="text">
+                <input type="text" id="cash" placeholder="120">
+                <input type="text">
+                <!-- total current assests -->
+                <input type="text">
+                <input type="text">
+                <input type="text" id="totalCurrentAssets" placeholder="3300" >
+                <input type="text" >
+                <h4>Current liabilities</h4>
+                <!-- assest 1 -->
+               <input type="text" value="Creditors">
+               <input type="text" id="creditors" placeholder="2000">
+               <input type="text" >
+               <input type="text">
+               <!-- asset 2  -->
+               <input type="text" value="Accruals">
+               <input type="text" id="accruals" placeholder="500" >
+               <input type="text" >
+               <input type="text">
+               <!-- asset 3  -->
+               <input type="text" value="Overdraft">
+               <input type="text" id="overdraft" placeholder="200">
+               <input type="text" >
+               <input type="text">
+               <!-- net assests -->
+               <input type="text">
+               <input type="text" >
+               <input type="text" id="totalCurrentLiabilities" placeholder="2700">
+               <input type="text">
+               <!-- net working capital  -->
+               <input type="text" value="NWC">
+               <input type="text" >
+               <input type="text">
+               <input type="text" id="nwc" placeholder="600">
+               <input type="text" value="Net Assets">
+               <input type="text">
+               <input type="text">
+               <input type="text" id="netAssets" placeholder="70000">
+               <h4>Financed by section </h4>
+                <!-- assest 1 -->
+                <input type="text" value="Capital">
+                <input type="text">
+                <input type="text">
+                <input type="text" id="capital" placeholder="126700">
+                <!-- asset 2  -->
+                <input type="text" value="Add Net Profit">
+                <input type="text">
+                <input type="text" id="balNetProfit" placeholder="7600">
+                <input type="text">
+                <!-- asset 3  -->
+                <input type="text" value="Less drawings">
+                <input type="text">
+                <input type="text" id="drawings" placeholder="600">
+                <input type="text">
+                <!-- asset 4  -->
+                <input type="text" >
+                <input type="text">
+                <input type="text" id="totalAfterDrawings" placeholder="7000">
+                <input type="text">
+                 <!-- asset 4  -->
+                 <input type="text" value="Long-term">
+                 <input type="text">
+                 <input type="text">
+                 <input type="text" id="longTerm" placeholder="10000">
+                 <input type="text" value="Capital employed">
+                 <input type="text">
+                 <input type="text">
+                 <input type="text" id="capitalEmployed" placeholder="70000"><br><br>
+                 <button class="btn btn-outline-dark btn-sm" value="balanceSheet">Click</button>
+          </div>
+        </div>
+      </div>
+</div>
+    <script src="trading.js"></script>
+  </body>
+</html>
